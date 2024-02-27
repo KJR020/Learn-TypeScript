@@ -6,3 +6,5 @@ enum ContractStatus {
 
 let employeeStatus: ContractStatus = ContractStatus.Temp;
 console.log(employeeStatus); 
+
+console.log(ContractStatus[employeeStatus]) 
