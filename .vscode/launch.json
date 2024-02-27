@@ -7,7 +7,10 @@
       "name": "Launch TypeScript",
       "preLaunchTask": "Compile TypeScript",
       "cwd": "${workspaceFolder}",
-      "program": "${file}"
+      "program": "${file}",
+      "outFiles": [
+                      "${workspaceFolder}/build/**/*.js"
+                  ]
     }
   ]
 }

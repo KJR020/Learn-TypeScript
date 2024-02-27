@@ -3,9 +3,17 @@
   "tasks": [
     {
       "label": "Compile TypeScript",
-      "type": "typescript",
-      "tsconfig": "tsconfig.json",
-      "problemMatcher": ["$tsc"]
+      "type": "shell",
+      "command": "bash",
+      "args": [
+            "-c",
+            "tsc -p tsconfig.json"
+        ],
+      "problemMatcher": "$tsc",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     }
   ]
 }
